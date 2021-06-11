@@ -145,3 +145,65 @@ h2 span{
     color: black;
     padding: 15px 10px;
 }
+
+/* Banner part start*/
+#banner {
+    background: url(../images/images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+#banner .banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+}
+#banner .banner-content h2{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+}
+#banner .banner-content h1{
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+#banner .banner-content p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 710px;
+    padding: 20px 0 50px;
+}
+#banner .banner-content a{
+    color: #fff;
+    background: #f34236;
+    border-radius: 3px;
+    box-shadow: 0 8px 15px rgb(0 ,0 , 0 ,0.1);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 15px 34px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

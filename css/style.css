@@ -1,0 +1,147 @@
+#address
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "open sans",sans-serif;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ui{
+    list-style-type: none;
+}
+a{
+    text-decoration:  none;
+}
+h2{
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 ::after{
+    width: 60px;
+    height: 3px;
+    background: #111111;
+    content: '';
+    position: absolute;
+    margin: auto;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+}
+h2 span{
+    color: #f34236;
+}
+#preloader-container{
+    position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: #fff;
+   z-index: ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#preloader{
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+     -o-border-radius: 50%;
+     animation:preloader, 8s linear infinite ;
+     -webkit-animation:preloader, 8s linear infinite alternate;
+    
+}
+@keyframes preloader{
+    30%{
+         border-radius: 0%;
+        -webkit-border-radius: 0%;
+        -moz-border-radius: 0%;
+        -ms-border-radius: 0%;
+        -o-border-radius: 0%;
+    }
+    60%{
+        border-radius: 25%;
+        -webkit-border-radius: 25%;
+        -moz-border-radius: 25%;
+        -ms-border-radius: 25%;
+        -o-border-radius: 25%;
+    }
+   100%{
+    order-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+ }
+
+}
+#navber{
+    top: 0;left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(98, 98, 98, 98.6);
+    transform: linear 0.7;
+}
+.stickyNav{
+    background: white;
+    animation:  stickyNa.7s;
+}
+
+@keyframes stickyNav {
+    from{
+        top: -30px;
+    }
+    to{
+        top: 0;
+    }
+}
+#navber .logo{
+    width: 20%;
+    align-self: center;
+}
+#navber .logo a{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#navber .stickyNav .logo a{
+    color: black;
+}
+#navber .menu{
+    width: 80%;
+}
+#navber .menu ul{
+    text-align: right;
+}
+#navber .menu ul li{
+    display: inline-block;
+}
+#navber .menu ul li a{
+    display: inline-block;
+    padding: 20px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    /*color: #fff*/
+}  
+#navber .stickyNav .menu ul li a{
+    color: black;
+    padding: 15px 10px;
+}

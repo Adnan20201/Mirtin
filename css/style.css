@@ -191,9 +191,90 @@ h2 span{
     text-transform: uppercase;
 }
 
+/* About Part Start */
+#about{
+    padding: 100px 0;
+ 
+}
+#about .about-image{
+    width: 40%;
+    display: flex;
+}
+#about .about-image img{
+    display: block;
+    width: 100%;
+    border: 10px solid #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 16px rgb(58, 78, 95, 0.05);
+}   
+#about .about-content{
+    width: 60%;
+    padding: 25px 0 0 60px;
 
-
-
+}
+#about .about-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+#about .about-content h3::after{
+    width: 60px;
+    height:  3px;
+    background: #111111;
+    content: '';
+    position: absolute;
+    left: 0;
+    margin: auto;
+    bottom: -10px;
+}
+#about .about-content h3 span{
+    color: #f34236;
+}
+#about .about-content h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 0 15px;
+}
+#about .about-content p{
+    font-size: 15px;
+    color: #828282;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 0 60px 16px 0;
+}
+/* #about .about-content .about-content-icon i{
+    background: #111;
+    color: #fff;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    padding-top: 13px;
+    font-size: 15px;
+    text-align: center;
+}
+*/
+#about .about-content .about-btn a{
+    display: inline-block;
+    color: #fff;
+    background:#f34236;
+    border-color: #f34236;
+    border-radius: 3px;
+    box-shadow: 0 8px 15px rgb(0, 0 ,0 ,0.1);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 34px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 20px 5px 0 0;
+    transition: all linear 0.5s;
+    
+}
+#about .about-content .about-btn a:hover{
+    background: #111;
+    box-shadow: 0 12px 15px rgba(343,66 ,54 ,0.5);
+} 
 
 
 
